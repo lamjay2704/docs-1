@@ -5,6 +5,7 @@ module.exports = {
   icon: "/docs/icons/nitro.svg",
   baseDir: "nitro",
   versions: [
+    ["3.x", { label: "3.x" }],
     ["2.x", { label: "2.x" }],
     ["1.x", { label: "1.x" }]
   ],
@@ -12,6 +13,15 @@ module.exports = {
   searchPlaceholder: "Search the Nitro docs (Press “/” to focus)",
   primarySet: true,
   sidebar: {
+    "3.x": {
+      "/": [
+        {
+          title: "Introduction",
+          collapsable: false,
+          children: ["", "upgrade"]
+        }
+      ]
+    },
     "2.x": {
       "/": [
         {
